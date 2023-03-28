@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.6023688663282571, 0.9306260575296109" maxHeight="485.0" maxWidth="500.0" minHeight="600.0" minWidth="500.0" orientation="VERTICAL" prefHeight="485.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_iterator.HelloController">
+   <items>
+      <ImageView fx:id="view" fitHeight="284.0" fitWidth="507.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox alignment="CENTER" maxHeight="150.0" maxWidth="200.0" minHeight="150.0" minWidth="200.0" prefHeight="150.0" prefWidth="250.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#previous" text="Назад" />
+            <Button mnemonicParsing="false" onAction="#next" text="Вперед" />
+            <Button fx:id="start_stop_button" mnemonicParsing="false" onAction="#start_stop" text="Старт" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="time" alignment="CENTER" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="300.0" prefHeight="30.0" prefWidth="300.0" />
+            <Button fx:id="Ок" alignment="CENTER" onAction="#setInterval" mnemonicParsing="false" text="Ок" />
+         </children>
+      </HBox>
+   </items>
+</SplitPane>
